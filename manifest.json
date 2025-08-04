@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Overlay Remover",
+  "version": "1.0",
+  "description": "Click to remove annoying overlay popups.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Remove Overlay",
+    "default_icon": {
+      "16": "icon.jpg",
+      "48": "icon.jpg",
+      "128": "icon.jpg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
